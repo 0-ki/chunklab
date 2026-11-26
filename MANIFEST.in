@@ -1,0 +1,15 @@
+include README.md README.ko.md LICENSE NOTICE.md RELEASE_NOTES.md ROADMAP.md DESIGN.md
+recursive-include chunklab *.py
+prune .git
+prune .venv
+prune venv
+prune .pytest_cache
+prune __pycache__
+prune chunklab.egg-info
+prune build
+prune dist
+prune wheelhouse
+prune tests
+prune examples
+recursive-exclude .streamlit secrets.toml
+global-exclude *.py[cod] *.jsonl *.log .env .env.* credentials.* *secret* *secrets* *token*
